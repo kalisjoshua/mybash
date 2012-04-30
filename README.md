@@ -1,4 +1,3 @@
-mybash
-======
+= mybash
 
 my bash shell customizations
