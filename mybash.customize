@@ -1,0 +1,23 @@
+#!/bin/bash
+
+export PS1="\n\
+\e[0;92m\u\
+\e[0m@\
+\e[0;32m\h: \
+\e[0m\W\n:> "
+
+. ~/nvm/nvm.sh
+
+echo "set completion-ignore-case On" > ~/.inputrc
+
+alias qlf1='ssh jkalis01@ql1fringe1'
+
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+# QL
+
+# User specific aliases and functions
+export CVSROOT=:ext:jkalis01@cvsprod:/cvs/web
+export CVS_RSH=ssh
+export PATH=$PATH:$HOME/bin
+alias cvstime='ssh fringe@ql1fringe1'
